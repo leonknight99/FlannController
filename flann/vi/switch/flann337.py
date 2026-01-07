@@ -1,5 +1,4 @@
 from enum import Enum
-from turtle import pos
 
 from flann.vi import FlannProgrammable
 
