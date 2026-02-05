@@ -2,9 +2,9 @@ from flann.vi import FlannProgrammable
 
 
 class Attenuator625(FlannProgrammable):
-    '''Class for Flann's 625 programmable attenuator.'''
+    '''Class for Flann's 625 programmable attenuator'''
     def __init__(self, address: str, tcp_port: int, *args, **kwargs):
-        super().__init__(address, is_serial=False, *args, **kwargs)
+        super().__init__(is_serial=False, *args, **kwargs)
 
         self._resource.connect((address, tcp_port))
 
